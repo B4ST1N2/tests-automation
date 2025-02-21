@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.sofka'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.8.1'
+    testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.10.0'
+}
+
+    test {
+    useJUnitPlatform()
+}
